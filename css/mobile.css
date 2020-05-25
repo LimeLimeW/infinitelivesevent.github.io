@@ -13,6 +13,7 @@
   margin-top: 0px;
   width: 100%;
 }
+
 iframe {
   display: none;
 }
@@ -39,6 +40,7 @@ text-align: left;
   text-align:left;
   overflow-anchor: auto;
   margin-left: 0px;
+  margin-top: 900px;
 }
 
 .faq {
@@ -46,6 +48,7 @@ text-align: left;
   text-align:left;
   overflow-anchor: auto;
   margin-left: 0px;
+  margin-top:20px;
 }
 
 .sidenav {
@@ -95,8 +98,8 @@ text-align: left;
 
   cursor: pointer;
 
-  opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
+  opacity: 0;
+  z-index: 2;
 
   -webkit-touch-callout: none;
 }

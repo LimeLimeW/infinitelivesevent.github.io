@@ -7,10 +7,10 @@
 
 
 iframe {
-  width: 829px;
-  height: 423px;
-  margin-top: 299px;
-  position: flex;
+  width: 768px;
+  height: 569px;
+  margin-top: 580px;
+  margin-left: 700px;
 
 }
 
@@ -54,12 +54,33 @@ a {
 }
 
 .main {
-
   margin-left: 300px; /* Same as the width of the sidenav */
   font-size: 28px; /* Increased text to enable scrolling */
   padding: 0px 10px;
+  min-height: 100%;
   display: block;
-  background-image: url("header.png");
+}
+
+
+.bg {
+  margin-left: 300px;
+  padding: 0px 10px;
+  display: block;
+}
+
+.bg::after {
+  content: "";
+  background: url('../img/header.png') no-repeat;
+  background-size: cover;
+  opacity: 0.40;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
 }
 
 html {
@@ -69,9 +90,24 @@ html {
   -moz-osx-font-smoothing: grayscale;
   color: black;
   background: #f5e5f8;
+
+
 }
 
+.bg {
+  position: absolute;
+ top: 0;
+ width: 100%;
+ margin: 0;
+ margin-top: 0px;
+ height:520px;
+ left: 0px;
+ margin-left: 0;
+}
 
+#menuToggle {
+  display: none;
+}
 
 
 h1 {
