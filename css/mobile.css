@@ -4,6 +4,7 @@
   font-size: 20px;
   text-align: right;
   margin-left: 0px;
+  margin-top: 60px;
 }
 .about {
   font-size: 20px;
@@ -12,6 +13,7 @@
   text-align: center;
   margin-top: 0px;
   width: 100%;
+  margin-top: 60px;
 }
 
 iframe {
@@ -40,7 +42,7 @@ text-align: left;
   text-align:left;
   overflow-anchor: auto;
   margin-left: 0px;
-  margin-top: 900px;
+  margin-top: 1000px;
 }
 
 .faq {
