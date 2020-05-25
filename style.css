@@ -1,0 +1,185 @@
+.inflives {
+  float: left;
+  font-size: 20px;
+  text-align: left;
+  margin-left: 49px;
+}
+
+
+iframe {
+  width: 829px;
+  height: 423px;
+  margin-top: 299px;
+  position: flex;
+
+}
+
+
+.about {
+  font-size: 20px;
+  float: right;
+  width: 50%;
+  text-align: left;
+  margin-left: 49px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.sidenav a {
+  margin-top: 99px;
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+
+  margin-left: 300px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+  display: block;
+  background-image: url("header.png");
+}
+
+html {
+  font-family: Montserrat;
+  font-style: bold;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: black;
+  background: #f5e5f8;
+}
+
+
+
+
+h1 {
+  font-size: 50px;
+}
+
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+
+
+
+.carousel {
+  position: relative;
+  width: 768px;
+  height: 569px;
+  margin: 0 auto;
+  margin-left: 349px;
+}
+
+.carousel-content {
+  position: relative;
+  overflow: hidden;
+  transition: width .4s;
+  height: 100%;
+}
+
+.slide {
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  z-index: 1;
+  transition: left .4s cubic-bezier(.47,.13,.15,.89);
+}
+
+.nav {
+  position: absolute;
+  top: 50%;
+  margin-top: -10px;
+  background-color:black;
+  width: 60px;
+  height: 60px;
+  z-index: 2;
+  cursor: pointer;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  color: white;
+  -webkit-user-select: none;
+}
+
+.nav-left {
+  left: -25px;
+}
+
+.nav-right {
+  right: -25px;
+}
+
+
+.arrow-right {
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+
+  border-left: 20px solid white;
+  background: transparent;
+
+  margin: 10px 20px;
+}
+
+.arrow-left {
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-right:20px solid white;
+  margin: 10px 15px;
+}
+
+
+.faq {
+  color: black;
+  margin-left:349px;
+  text-align:left;
+   overflow-anchor: auto;
+}
+
+.questions {
+  text-align: left;
+  margin-left: 349px;
+   overflow-anchor: auto;
+}
+
+.contact {
+  margin-left: 349px;
+text-align: left;
+ overflow-anchor: auto;
+}
+
+.schedule {
+  color: black;
+  margin-left:349px;
+  text-align:left;
+   overflow-anchor: auto;
+}
