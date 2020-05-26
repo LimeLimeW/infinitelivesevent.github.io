@@ -1,36 +1,33 @@
+
 .inflives {
   float: left;
   font-size: 20px;
   text-align: left;
-  margin-left: 20px;
-  margin-top: 60px;
-}
-
-footer {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
+  margin-left: 50px;
+  margin-top: 100px;
+  display: inline-block;
+  float: left;
 }
 
 
 iframe {
-  width: 768px;
-  height: 569px;
-  margin-top: 580px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+  width: 829px;
+  height: 423px;
+  margin-top: 600px;
+  margin-left: 695px;
+
 }
 
 
 .about {
-  font-size: 20px;
-  float: right;
-  width: 50%;
-  text-align: left;
-  margin-left: 49px;
-  margin-top: 60px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 320px;
+    flex-wrap: wrap;
+    display: inline-block;
+    width: 25%;
+    margin-top: 220px;
+    margin-left: 45px;
 }
 
 .sidenav {
@@ -40,9 +37,13 @@ iframe {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: black;
   overflow-x: hidden;
   padding-top: 20px;
+}
+
+.anchors {
+  margin-top:100px;
 }
 
 a {
@@ -51,58 +52,49 @@ a {
 }
 
 .sidenav a {
-  margin-top: 99px;
-  padding: 6px 8px 6px 16px;
+  margin-top: 200px;
   text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
+  font-size: 22px;
+  color: white;
+  margin-left: 100px;
+  display: inline;
 }
 
 .sidenav a:hover {
-  color: #f1f1f1;
+  color: #8b8b8b;
 }
 
 .main {
-  margin-left: 20px; /* Same as the width of the sidenav */
-  font-size: 28px; /* Increased text to enable scrolling */
+    position: relative;
+    left: 652px;
+    padding: 0;
+    margin: 0;
+}
+
+}
+
+
+.bg {
+  margin-left: 300px;
   padding: 0px 10px;
-  min-height: 100%;
   display: block;
 }
 
 
 
-.bg::after {
-  content: "";
-  background: url('../img/header.png') no-repeat;
-  background-size: cover;
-  opacity: 0.40;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;
-  -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
-  mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
-}
-
 html {
   font-family: Montserrat;
-  font-style: bold;
+  font-weight: 700;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: black;
   background: #f5e5f8;
-
-
 }
 
 .bg {
   position: absolute;
  top: 0;
- width: 99vw;
+ width: 100%;
  margin: 0;
  margin-top: 0px;
  height:520px;
@@ -128,170 +120,26 @@ h1 {
 
 
 
-#menuToggle
-{
-  display: block;
-  position: fixed;
-  top: 20px;
-  left: 20px;
-
-  z-index: 3;
-
-  -webkit-user-select: none;
-  user-select: none;
-}
-
-#menuToggle a
-{
-  text-decoration: none;
-  color: #232323;
-
-  transition: color 0.3s ease;
-}
-
-#menuToggle a:hover
-{
-  color: tomato;
-}
-
-
-#menuToggle input
-{
-  display: block;
-  width: 40px;
-  height: 32px;
-  position: absolute;
-  top: -7px;
-  left: -5px;
-
-  cursor: pointer;
-
-  opacity: 0;
-  z-index: 2;
-
-  -webkit-touch-callout: none;
-}
-
-/*
- * Just a quick hamburger
- */
-#menuToggle span
-{
-  display: block;
-  width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
-  position: relative;
-
-  background: black;
-  border-radius: 3px;
-
-  z-index: 1;
-
-  transform-origin: 4px 0px;
-
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
-}
-
-#menuToggle span:first-child
-{
-  transform-origin: 0% 0%;
-}
-
-#menuToggle span:nth-last-child(2)
-{
-  transform-origin: 0% 100%;
-}
-
-/*
- * Transform all the slices of hamburger
- * into a crossmark.
- */
-#menuToggle input:checked ~ span
-{
-  opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
-}
-
-/*
- * But let's hide the middle one.
- */
-#menuToggle input:checked ~ span:nth-last-child(3)
-{
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
-}
-
-/*
- * Ohyeah and the last one should go the other direction
- */
-#menuToggle input:checked ~ span:nth-last-child(2)
-{
-  transform: rotate(-45deg) translate(0, -1px);
-}
-
-/*
- * Make this absolute positioned
- * at the top left of the screen
- */
-#menu
-{
-  position: absolute;
-  width: 300px;
-  margin: -100px 0 0 -50px;
-  padding: 50px;
-  padding-top: 125px;
-
-  background: #ededed;
-  list-style-type: none;
-  -webkit-font-smoothing: antialiased;
-  /* to stop flickering of text in safari */
-
-  transform-origin: 0% 0%;
-  transform: translate(-100%, 0);
-
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-}
-
-#menu li
-{
-  padding: 10px 0;
-  font-size: 22px;
-}
-
-/*
- * And let's slide it in from the left
- */
-#menuToggle input:checked ~ ul
-{
-  transform: none;
-}
-
 
 .carousel {
-  width: 768px;
-  height: 569px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 40%;
-  position: relative;
+    position: relative;
+    width: 768px;
+    height: 569px;
+    margin: 0 auto;
+        margin-left: auto;
+    margin-left: 35px;
 }
+
 
 .carousel-content {
   position: relative;
   overflow: hidden;
   transition: width .4s;
   height: 100%;
-
 }
 
 .slide {
   height: 100%;
-  width:100%
   background-color: black;
   position: absolute;
   z-index: 1;
@@ -300,6 +148,7 @@ h1 {
 
 .nav {
   position: absolute;
+  top: 50%;
   margin-top: -10px;
   background-color:black;
   width: 60px;
@@ -314,25 +163,13 @@ h1 {
 }
 
 .nav-left {
-  left: -30px;
-  position:absolute;
-top:calc(50% - 1em);
+  left: -25px;
 }
 
 .nav-right {
-  right: -30px;
-  position:absolute;
-top:calc(50% - 1em);
+  right: -25px;
 }
 
-  .schimg {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  max-width: 100%;
-  max-height: 100%;
-}
 
 .arrow-right {
   width: 0;
@@ -344,7 +181,6 @@ top:calc(50% - 1em);
   background: transparent;
 
   margin: 10px 20px;
-
 }
 
 .arrow-left {
@@ -359,27 +195,31 @@ top:calc(50% - 1em);
 
 .faq {
   color: black;
-  margin-left:30px;
+  margin-left:349px;
   text-align:left;
    overflow-anchor: auto;
+   margin-left: 695px;
 }
 
 .questions {
   text-align: left;
-  margin-left: 30px;
+  margin-left: 349px;
    overflow-anchor: auto;
+   margin-left: 695px;
+   font-weight: 500;
 }
 
 .contact {
-  margin-left: 30px;
+  margin-left: 349px;
 text-align: left;
  overflow-anchor: auto;
+ margin-left: 695px;
+ font-weight: 500;
 }
 
 .schedule {
   color: black;
-  display: block;
-  margin-left:30px;
+  margin-left: 695px;
   text-align:left;
    overflow-anchor: auto;
 }
