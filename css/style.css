@@ -1,4 +1,3 @@
-
 .inflives {
   float: left;
   font-size: 20px;
@@ -7,6 +6,10 @@
   margin-top: 100px;
   display: inline-block;
   float: left;
+}
+
+li {
+  list-style: none
 }
 
 
@@ -32,7 +35,7 @@ iframe {
 
 .sidenav {
   height: 100%;
-  width: 300px;
+  width: 600px;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -44,6 +47,7 @@ iframe {
 
 .anchors {
   margin-top:100px;
+  margin-left:390px;
 }
 
 a {
@@ -56,7 +60,6 @@ a {
   text-decoration: none;
   font-size: 22px;
   color: white;
-  margin-left: 100px;
   display: inline;
 }
 
@@ -79,11 +82,6 @@ a {
   display: block;
 }
 
-.bg {
-  margin-left: 300px;
-  padding: 0px 10px;
-  display: block;
-}
 
 
 
@@ -94,6 +92,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   color: black;
   background: #f5e5f8;
+  overflow-x: hidden; //horizontal
 }
 
 .bg {

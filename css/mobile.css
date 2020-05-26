@@ -20,9 +20,10 @@ iframe {
   display: none;
 }
 .main {
-  margin-left: 0px;
   font-size: 28px; /* Increased text to enable scrolling */
   padding: 0px 10px;
+  left: 0px;
+
 }
 
 .questions {
@@ -42,7 +43,7 @@ text-align: left;
   text-align:left;
   overflow-anchor: auto;
   margin-left: 0px;
-  margin-top: 1000px;
+  margin-top: 1010px;
 }
 
 footer {
@@ -178,12 +179,13 @@ footer {
  */
 #menu
 {
-  position: absolute;
+  position: fixed;
   width: 300px;
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
-
+  position: fixed;
+  z-index:0 !important;
   background: #ededed;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
@@ -199,6 +201,7 @@ footer {
 {
   padding: 10px 0;
   font-size: 22px;
+
 }
 
 /*
