@@ -13,7 +13,7 @@
 iframe {
   width: 828px;
   height: 424px;
-  margin-top: 580px;
+  margin-top: 600px;
   margin-left: 700px;
 
 }
@@ -212,6 +212,7 @@ h1 {
    overflow-anchor: auto;
    margin-left: 695px;
    font-weight: 500;
+   width: 45%;
 }
 
 .contact {
