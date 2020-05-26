@@ -11,10 +11,10 @@
 
 
 iframe {
-  width: 829px;
-  height: 423px;
-  margin-top: 600px;
-  margin-left: 695px;
+  width: 828px;
+  height: 424px;
+  margin-top: 580px;
+  margin-left: 700px;
 
 }
 
@@ -73,6 +73,11 @@ a {
 
 }
 
+.bg {
+  margin-left: 300px;
+  padding: 0px 10px;
+  display: block;
+}
 
 .bg {
   margin-left: 300px;
