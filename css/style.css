@@ -2,12 +2,14 @@
   float: left;
   font-size: 20px;
   text-align: left;
-  margin-left: 49px;
+  margin-left: 20px;
   margin-top: 60px;
 }
 
 footer {
-  margin-left: 348px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 
@@ -15,8 +17,10 @@ iframe {
   width: 768px;
   height: 569px;
   margin-top: 580px;
-  margin-left: 700px;
-
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
 }
 
 
@@ -60,7 +64,7 @@ a {
 }
 
 .main {
-  margin-left: 300px; /* Same as the width of the sidenav */
+  margin-left: 20px; /* Same as the width of the sidenav */
   font-size: 28px; /* Increased text to enable scrolling */
   padding: 0px 10px;
   min-height: 100%;
@@ -68,11 +72,6 @@ a {
 }
 
 
-.bg {
-  margin-left: 300px;
-  padding: 0px 10px;
-  display: block;
-}
 
 .bg::after {
   content: "";
@@ -103,7 +102,7 @@ html {
 .bg {
   position: absolute;
  top: 0;
- width: 100%;
+ width: 99vw;
  margin: 0;
  margin-top: 0px;
  height:520px;
@@ -129,13 +128,157 @@ h1 {
 
 
 
+#menuToggle
+{
+  display: block;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+
+  z-index: 3;
+
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: tomato;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+
+  cursor: pointer;
+
+  opacity: 0;
+  z-index: 2;
+
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+
+  background: black;
+  border-radius: 3px;
+
+  z-index: 1;
+
+  transform-origin: 4px 0px;
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/*
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
 
 .carousel {
-  position: relative;
   width: 768px;
   height: 569px;
-  margin: 0 auto;
-  margin-left: 349px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  position: relative;
 }
 
 .carousel-content {
@@ -143,10 +286,12 @@ h1 {
   overflow: hidden;
   transition: width .4s;
   height: 100%;
+
 }
 
 .slide {
   height: 100%;
+  width:100%
   background-color: black;
   position: absolute;
   z-index: 1;
@@ -155,7 +300,6 @@ h1 {
 
 .nav {
   position: absolute;
-  top: 50%;
   margin-top: -10px;
   background-color:black;
   width: 60px;
@@ -170,13 +314,25 @@ h1 {
 }
 
 .nav-left {
-  left: -25px;
+  left: -30px;
+  position:absolute;
+top:calc(50% - 1em);
 }
 
 .nav-right {
-  right: -25px;
+  right: -30px;
+  position:absolute;
+top:calc(50% - 1em);
 }
 
+  .schimg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  max-width: 100%;
+  max-height: 100%;
+}
 
 .arrow-right {
   width: 0;
@@ -188,6 +344,7 @@ h1 {
   background: transparent;
 
   margin: 10px 20px;
+
 }
 
 .arrow-left {
@@ -202,26 +359,27 @@ h1 {
 
 .faq {
   color: black;
-  margin-left:349px;
+  margin-left:30px;
   text-align:left;
    overflow-anchor: auto;
 }
 
 .questions {
   text-align: left;
-  margin-left: 349px;
+  margin-left: 30px;
    overflow-anchor: auto;
 }
 
 .contact {
-  margin-left: 349px;
+  margin-left: 30px;
 text-align: left;
  overflow-anchor: auto;
 }
 
 .schedule {
   color: black;
-  margin-left:349px;
+  display: block;
+  margin-left:30px;
   text-align:left;
    overflow-anchor: auto;
 }
