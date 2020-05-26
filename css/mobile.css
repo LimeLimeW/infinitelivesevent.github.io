@@ -45,6 +45,11 @@ text-align: left;
   margin-top: 1000px;
 }
 
+footer {
+  margin-left: 0px;
+}
+
+
 .faq {
   color: black;
   text-align:left;
