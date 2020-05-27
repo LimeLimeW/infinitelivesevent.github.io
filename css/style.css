@@ -61,6 +61,15 @@ a {
   color: black;
 }
 
+.contact a {
+  color: #818181;
+}
+
+.contact a:hover {
+  color: #f688f2;
+}
+
+
 .sidenav a {
   margin-top: 200px;
   text-decoration: none;
@@ -80,17 +89,6 @@ a {
     margin: 0;
 }
 
-}
-
-.bg {
-  padding: 0px 10px;
-  display: block;
-  background-image: url("../img/header.png");
-}
-
-
-
-
 html {
   font-family: Montserrat;
   font-weight: 700;
@@ -101,6 +99,7 @@ html {
   overflow-x: hidden;
 }
 
+
 .bg {
   position: absolute;
  top: 0;
@@ -110,6 +109,9 @@ html {
  height:520px;
  left: 0px;
  margin-left: 0;
+ background-image: url("../img/header.png");
+ background-repeat: no-repeat;
+ background-position: 41%;
 }
 
 #menuToggle {
@@ -242,6 +244,10 @@ line-height: 12px;
 
 .inflives h2 {
   line-height: 15px;
+}
+
+.contact a:hover {
+  color: #
 }
 
 .contact {
