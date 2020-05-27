@@ -2,7 +2,7 @@
   float: left;
   font-size: 20px;
   text-align: left;
-  margin-left: 50px;
+  margin-left: 0%;
   margin-top: 100px;
   display: inline-block;
   float: left;
@@ -16,11 +16,18 @@ li {
 iframe {
   width: 828px;
   height: 424px;
-  margin-top: 600px;
-  margin-left: 700px;
+  margin-top: 500px;
+  margin-left: 37%;
 
 }
 
+.inflives a {
+  line-height: 10px;
+}
+
+.inflives i {
+  line-height: 10px;
+}
 
 .about {
     font-size: 18px;
@@ -28,7 +35,7 @@ iframe {
     margin-right: 320px;
     flex-wrap: wrap;
     display: inline-block;
-    width: 25%;
+    width: 24%;
     margin-top: 220px;
     margin-left: 45px;
 }
@@ -46,7 +53,7 @@ iframe {
 
 .anchors {
   margin-top:100px;
-  margin-left:25%;
+  margin-left:40%;
 }
 
 a {
@@ -68,7 +75,7 @@ a {
 
 .main {
     position: relative;
-    left: 652px;
+    left: 37%;
     padding: 0;
     margin: 0;
 }
@@ -128,9 +135,9 @@ h1 {
     width: 768px;
     height: 569px;
     margin: 0 auto;
-        margin-left: auto;
+    margin-left: 37%;
     margin-left: 35px;
-    z-index: -1;
+    z-index: 0;
 }
 
 
@@ -198,32 +205,54 @@ h1 {
 
 .faq {
   color: black;
-  margin-left:349px;
+  margin-left:37%;
   text-align:left;
    overflow-anchor: auto;
-   margin-left: 695px;
 }
 
 .questions {
   text-align: left;
-  margin-left: 349px;
+  margin-left: 37%;
    overflow-anchor: auto;
-   margin-left: 695px;
    font-weight: 500;
    width: 45%;
 }
 
+
+.ayce p {
+line-height: 12px;
+}
+
+.aboc p {
+line-height: 12px;
+}
+
+.binary p {
+  line-height: 12px;
+}
+
+.inflives p {
+  line-height: 10px;
+}
+
+.inflives h1 {
+  line-height: 15px;
+}
+
+.inflives h2 {
+  line-height: 15px;
+}
+
 .contact {
-  margin-left: 349px;
+  margin-left: 37%;
 text-align: left;
- overflow-anchor: auto;
- margin-left: 695px;
  font-weight: 500;
+ line-height: 32px;
 }
 
 .schedule {
   color: black;
-  margin-left: 695px;
+  margin-left: 37%;
   text-align:left;
    overflow-anchor: auto;
 }
