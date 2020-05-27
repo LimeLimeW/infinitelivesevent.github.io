@@ -16,8 +16,8 @@ li {
 iframe {
   width: 828px;
   height: 424px;
-  margin-top: 500px;
-  margin-left: 37%;
+  margin-top: 530px;
+  margin-left: 25%;
 
 }
 
@@ -75,7 +75,7 @@ a {
 
 .main {
     position: relative;
-    left: 37%;
+    left: 25%;
     padding: 0;
     margin: 0;
 }
@@ -83,9 +83,9 @@ a {
 }
 
 .bg {
-  margin-left: 300px;
   padding: 0px 10px;
   display: block;
+  background-image: url("../img/header.png");
 }
 
 
@@ -98,6 +98,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   color: black;
   background: #f5e5f8;
+  overflow-x: hidden;
 }
 
 .bg {
@@ -135,7 +136,7 @@ h1 {
     width: 768px;
     height: 569px;
     margin: 0 auto;
-    margin-left: 37%;
+    margin-left: 25%;
     margin-left: 35px;
     z-index: 0;
 }
@@ -205,14 +206,14 @@ h1 {
 
 .faq {
   color: black;
-  margin-left:37%;
+  margin-left:25%;
   text-align:left;
    overflow-anchor: auto;
 }
 
 .questions {
   text-align: left;
-  margin-left: 37%;
+  margin-left: 25%;
    overflow-anchor: auto;
    font-weight: 500;
    width: 45%;
@@ -244,7 +245,7 @@ line-height: 12px;
 }
 
 .contact {
-  margin-left: 37%;
+  margin-left: 25%;
 text-align: left;
  font-weight: 500;
  line-height: 32px;
@@ -252,7 +253,7 @@ text-align: left;
 
 .schedule {
   color: black;
-  margin-left: 37%;
+  margin-left: 25%;
   text-align:left;
    overflow-anchor: auto;
 }
