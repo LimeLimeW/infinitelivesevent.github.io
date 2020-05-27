@@ -16,7 +16,6 @@ li {
 iframe {
   width: 828px;
   height: 424px;
-  margin-top: 530px;
   margin-left: 25%;
 
 }
@@ -29,14 +28,15 @@ iframe {
   line-height: 10px;
 }
 
+
 .about {
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 500;
     margin-right: 320px;
     flex-wrap: wrap;
     display: inline-block;
-    width: 24%;
-    margin-top: 220px;
+    width: 24vw;
+    margin-top: 20vh;
     margin-left: 45px;
 }
 
@@ -69,6 +69,13 @@ a {
   color: #f688f2;
 }
 
+body {
+    background-image: url("../img/header.png");
+    background-repeat: no-repeat;
+    background-position: 18vw 0%;
+    background-attachment: fixed;
+    margin-top: 0px;
+}
 
 .sidenav a {
   margin-top: 200px;
@@ -101,7 +108,6 @@ html {
 
 
 .bg {
-  position: absolute;
  top: 0;
  width: 100%;
  margin: 0;
@@ -109,9 +115,7 @@ html {
  height:520px;
  left: 0px;
  margin-left: 0;
- background-image: url("../img/header.png");
- background-repeat: no-repeat;
- background-position: 41%;
+
 }
 
 #menuToggle {
