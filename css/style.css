@@ -35,19 +35,18 @@ iframe {
 
 .sidenav {
   height: 100%;
-  width: 600px;
+  width: 20%;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
   background-color: black;
-  overflow-x: hidden;
   padding-top: 20px;
 }
 
 .anchors {
   margin-top:100px;
-  margin-left:390px;
+  margin-left:25%;
 }
 
 a {
@@ -92,7 +91,6 @@ html {
   -moz-osx-font-smoothing: grayscale;
   color: black;
   background: #f5e5f8;
-  overflow-x: hidden; //horizontal
 }
 
 .bg {
@@ -132,6 +130,7 @@ h1 {
     margin: 0 auto;
         margin-left: auto;
     margin-left: 35px;
+    z-index: -1;
 }
 
 
