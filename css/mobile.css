@@ -27,19 +27,36 @@ iframe {
 }
 
 
+body {
+    background-image: url("../img/header.png");
+    background-repeat: no-repeat;
+    background-position: 0vw 0%;
+    background-attachment: fixed;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    overflow: scroll;
+}
 
 
+.html {
+    overflow-x: hidden;
+}
 
 .questions {
   text-align: left;
    overflow-anchor: auto;
    margin-left: 0px;
+   margin-left: 10px;
+   width: 90%;
 }
 
 .contact {
 text-align: left;
  overflow-anchor: auto;
  margin-left: 0px;
+ line-height: 50px;
+ margin-left: 10px;
 }
 
 .schedule {
@@ -47,7 +64,8 @@ text-align: left;
   text-align:left;
   overflow-anchor: auto;
   margin-left: 0px;
-  margin-top: 1010px;
+  margin-top: 40vh;
+  margin-left: 10px;
 }
 
 footer {
@@ -61,6 +79,7 @@ footer {
   overflow-anchor: auto;
   margin-left: 0px;
   margin-top:20px;
+  margin-left: 10px;
 }
 
 .sidenav {
