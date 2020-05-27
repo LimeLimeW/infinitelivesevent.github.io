@@ -54,6 +54,7 @@ iframe {
 .anchors {
   margin-top:100px;
   margin-left:40%;
+  line-height: 50px;
 }
 
 a {
