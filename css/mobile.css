@@ -284,19 +284,19 @@ footer {
 }
 
 .nav {
-  position: absolute;
-  top: 50%;
-  margin-top: -10px;
-  background-color:black;
-  width: 60px;
-  height: 60px;
-  z-index: 2;
-  cursor: pointer;
-  border-radius: 50%;
-  border: none;
-  outline: none;
-  color: white;
-  -webkit-user-select: none;
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    background-color: black;
+    width: 10%;
+    height: auto;
+    z-index: 2;
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    color: white;
+    -webkit-user-select: none;
 }
 
 .nav-left {
@@ -309,25 +309,24 @@ footer {
 
 
 .arrow-right {
-  width: 0;
-  height: 0;
-  border-top: 20px solid transparent;
-  border-bottom: 20px solid transparent;
-
-  border-left: 20px solid white;
-  background: transparent;
-
-  margin: 10px 20px;
+    width: 0;
+    height: 0;
+    border-top: 2vw solid transparent;
+    border-bottom: 2vw solid transparent;
+    border-left: 2vw solid white;
+    background: transparent;
+    margin: 28% 40%;
 }
 
 .arrow-left {
-  width: 0;
-  height: 0;
-  border-top: 20px solid transparent;
-  border-bottom: 20px solid transparent;
-  border-right:20px solid white;
-  margin: 10px 15px;
+    width: 0;
+    height: 0;
+    border-top: 2vw solid transparent;
+    border-bottom: 2vw solid transparent;
+    border-right: 2vw solid white;
+    margin: 28% 33%;
 }
+
 .round {
   border-radius: 50%;
 }
